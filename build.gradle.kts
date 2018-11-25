@@ -60,11 +60,15 @@ configure(subprojects) {
             mavenBom("org.junit:junit-bom:5.3.1")
         }
         dependencies {
+            dependency("com.google.code.findbugs:annotations:3.0.1")
             dependency("com.google.testing.compile:compile-testing:0.15")
             dependency("com.squareup.okhttp3:okhttp:3.10.0")
+            dependency("com.squareup.retrofit2:converter-jackson:2.4.0")
             dependency("com.squareup.retrofit2:retrofit:2.4.0")
             dependency("commons-io:commons-io:2.6")
             dependency("org.apache.commons:commons-lang3:3.7")
+            dependency("org.projectlombok:lombok:1.18.2")
+            dependency("com.github.stefanbirkner:system-rules:1.19.0")
         }
     }
 

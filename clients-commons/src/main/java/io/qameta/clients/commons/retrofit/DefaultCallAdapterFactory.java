@@ -36,7 +36,7 @@ public final class DefaultCallAdapterFactory<T> extends CallAdapter.Factory {
         try {
             errorMessage = Objects.isNull(errorBody) ? response.message() : errorBody.string();
         } catch (IOException e) {
-            throw new ServiceException("could not read error body", e);
+            throw new ServiceException("Could not read error body", e);
         }
         return errorMessage;
     }

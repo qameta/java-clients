@@ -12,6 +12,6 @@ public interface WrikeApi {
     /**
      * Returns the Wrike tasks by provided number.
      */
-    @GET("tasks/{taskId}")
+    @GET("api/v4/tasks/{taskId}")
     Tasks getTasks(@Path("taskId") String taskId);
 }

@@ -20,12 +20,6 @@ public class BintrayServiceBuilder extends ServiceBuilder {
     }
 
     @Override
-    public BintrayServiceBuilder token(final String token) {
-        super.token(token);
-        return this;
-    }
-
-    @Override
     public BintrayServiceBuilder username(final String username) {
         super.username(username);
         return this;

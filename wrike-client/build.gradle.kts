@@ -3,23 +3,20 @@ description = "Wrike client"
 val agent by configurations.creating
 
 dependencies {
-    //    agent("org.aspectj:aspectjweaver")
-//    compile("org.apache.tika:tika-core")
-//    compile("org.aspectj:aspectjrt")
-//    compile("org.jooq:joor-java-8")
-//    compile("org.slf4j:slf4j-api")
-//    compile(project(":allure-model"))
-//    testCompile("io.github.benas:random-beans")
-//    testCompile("io.github.glytching:junit-extensions")
-//    testCompile("org.assertj:assertj-core")
-//    testCompile("org.junit-pioneer:junit-pioneer")
-//    testCompile("org.junit.jupiter:junit-jupiter-api")
-//    testCompile("org.junit.jupiter:junit-jupiter-params")
-//    testCompile("org.mockito:mockito-core")
-//    testCompile("org.slf4j:slf4j-simple")
-//    testCompile(project(":allure-java-commons-test"))
-//    testCompile(project(":allure-junit-platform"))
-//    testRuntime("org.junit.jupiter:junit-jupiter-engine")
+    annotationProcessor("org.projectlombok:lombok")
+
+    compile("com.squareup.okhttp3:okhttp")
+    compile("com.squareup.retrofit2:converter-jackson")
+    compile("com.squareup.retrofit2:retrofit")
+    compile("commons-io:commons-io")
+    compile("org.apache.commons:commons-lang3")
+
+    compile(project(":clients-commons"))
+    compileOnly("org.projectlombok:lombok")
+    compileOnly("com.google.code.findbugs:annotations")
+    testCompile("org.apache.commons:commons-lang3")
+    testCompile("com.google.testing.compile:compile-testing")
+    testCompile("com.github.stefanbirkner:system-rules")
 }
 
 tasks.named<Jar>("jar") {

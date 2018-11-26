@@ -1,5 +1,6 @@
 package io.qameta.clients.commons.retrofit;
 
+import io.qameta.clients.commons.exception.ServiceException;
 import okhttp3.ResponseBody;
 import retrofit2.Call;
 import retrofit2.CallAdapter;

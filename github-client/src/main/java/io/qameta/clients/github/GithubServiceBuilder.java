@@ -5,7 +5,7 @@ import io.qameta.clients.commons.retrofit.ServiceBuilder;
 import static io.qameta.clients.commons.util.PropertyUtils.requireProperty;
 
 /**
- * Jira Service builder.
+ * Github Service builder.
  */
 public class GithubServiceBuilder extends ServiceBuilder {
 

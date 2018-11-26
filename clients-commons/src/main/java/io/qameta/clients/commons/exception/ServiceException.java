@@ -1,4 +1,4 @@
-package io.qameta.clients.commons.retrofit;
+package io.qameta.clients.commons.exception;
 
 /**
  * Service exception when something wrong when execution call.

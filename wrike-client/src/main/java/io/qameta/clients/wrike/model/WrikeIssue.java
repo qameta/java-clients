@@ -1,4 +1,4 @@
-package io.qameta.clients.github;
+package io.qameta.clients.wrike.model;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -6,19 +6,21 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 /**
- * @author charlie (Dmitry Baev).
+ * @author vbragin
  */
 @Data
 @Accessors(chain = true)
-public class GithubIssue implements Serializable {
+public class WrikeIssue implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
+    protected String id;
+
     protected String title;
-    protected Long number;
-    protected String state;
+
+    protected String status;
 
     public boolean isClosed() {
-        return "closed".equalsIgnoreCase(state);
+        return "Completed".equalsIgnoreCase(status);
     }
 }

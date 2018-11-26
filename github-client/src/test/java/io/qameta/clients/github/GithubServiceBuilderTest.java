@@ -1,5 +1,6 @@
 package io.qameta.clients.github;
 
+import io.qameta.clients.github.model.GithubIssue;
 import org.junit.Rule;
 import org.junit.Test;
 import org.junit.contrib.java.lang.system.EnvironmentVariables;
@@ -17,6 +18,7 @@ public class GithubServiceBuilderTest {
     @Rule
     public final EnvironmentVariables jiraEnabled = new EnvironmentVariables()
             .set("GITHUB_ENDPOINT", ENDPOINT);
+
     @Test
     public void shouldCallWithDefault() {
         final Pattern compile = Pattern.compile("^([^/]+)/([^#]+)#(.+)$");

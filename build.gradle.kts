@@ -69,6 +69,7 @@ configure(subprojects) {
             dependency("org.apache.commons:commons-lang3:3.7")
             dependency("org.projectlombok:lombok:1.18.2")
             dependency("com.github.stefanbirkner:system-rules:1.19.0")
+            dependency("org.assertj:assertj-core:3.10.0")
         }
     }
 

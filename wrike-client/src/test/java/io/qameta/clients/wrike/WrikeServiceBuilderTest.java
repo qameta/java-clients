@@ -15,7 +15,7 @@ public class WrikeServiceBuilderTest {
 
     private static final String TOKEN = "***TOKEN***";
     @Rule
-    public final EnvironmentVariables jiraEnabled = new EnvironmentVariables()
+    public final EnvironmentVariables wrikeVariables = new EnvironmentVariables()
             .set("WRIKE_ENDPOINT", ENDPOINT)
             .set("WRIKE_TOKEN", TOKEN);
     @Test

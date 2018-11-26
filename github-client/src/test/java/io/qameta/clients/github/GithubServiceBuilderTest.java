@@ -16,7 +16,7 @@ public class GithubServiceBuilderTest {
     private static final String ENDPOINT =  "https://api.github.com/";
 
     @Rule
-    public final EnvironmentVariables jiraEnabled = new EnvironmentVariables()
+    public final EnvironmentVariables githubVariables = new EnvironmentVariables()
             .set("GITHUB_ENDPOINT", ENDPOINT);
 
     @Test
